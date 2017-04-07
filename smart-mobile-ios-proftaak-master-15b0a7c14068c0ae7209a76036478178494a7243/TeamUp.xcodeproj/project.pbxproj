@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50B35541E02B8E400D4856A /* EnrollmentDataContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B35531E02B8E400D4856A /* EnrollmentDataContract.swift */; };
+		F50B35561E02B8FD00D4856A /* EnrollmentFirebaseDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B35551E02B8FD00D4856A /* EnrollmentFirebaseDataContext.swift */; };
+		F50B35581E02BEFA00D4856A /* EnrollmentDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B35571E02BEFA00D4856A /* EnrollmentDataRepository.swift */; };
+		F511BC6D1DE9BCB400151CE1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511BC6C1DE9BCB300151CE1 /* SwiftyJSON.swift */; };
+		F51510D41DF0195000BEDEB7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51510D31DF0195000BEDEB7 /* CollectionViewCell.swift */; };
+		F51510D61DF01DE700BEDEB7 /* DetailPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51510D51DF01DE700BEDEB7 /* DetailPeopleViewController.swift */; };
+		F53F9C001DE878A800065A5B /* UserDataContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F9BFF1DE878A800065A5B /* UserDataContract.swift */; };
+		F53F9C021DE878E400065A5B /* UserFirebaseDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F9C011DE878E400065A5B /* UserFirebaseDataContext.swift */; };
+		F53F9C041DE8792000065A5B /* UserDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F9C031DE8792000065A5B /* UserDataRepository.swift */; };
+		F54E99671DE8446A00A70EE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54E99661DE8446A00A70EE2 /* LoginViewController.swift */; };
+		F54E996C1DE871BA00A70EE2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54E996B1DE871BA00A70EE2 /* User.swift */; };
+		F582F9151DFA88340008480F /* EditSkillsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582F9141DFA88340008480F /* EditSkillsetViewController.swift */; };
+		F58693D61DEFFBE300728D9B /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58693D51DEFFBE300728D9B /* CompanyViewController.swift */; };
+		F59904571DFC5D6F007B6765 /* EditContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59904561DFC5D6F007B6765 /* EditContactInformationViewController.swift */; };
+		F59904591DFC64FD007B6765 /* PersonalityDataContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59904581DFC64FD007B6765 /* PersonalityDataContract.swift */; };
+		F599045B1DFC6516007B6765 /* PersonalityFirebaseDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599045A1DFC6516007B6765 /* PersonalityFirebaseDataContext.swift */; };
+		F599045D1DFC6552007B6765 /* PersonalityDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599045C1DFC6552007B6765 /* PersonalityDataRepository.swift */; };
+		F599045F1DFC6674007B6765 /* SkillsetDataContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599045E1DFC6674007B6765 /* SkillsetDataContract.swift */; };
+		F59904611DFC66A8007B6765 /* Skillset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59904601DFC66A8007B6765 /* Skillset.swift */; };
+		F59904631DFC66DB007B6765 /* SkillsetFirebaseDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59904621DFC66DB007B6765 /* SkillsetFirebaseDataContext.swift */; };
+		F59904651DFC6756007B6765 /* SkillsetDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59904641DFC6756007B6765 /* SkillsetDataRepository.swift */; };
+		F59D9AA21DE8404D0090DD67 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59D9AA11DE8404D0090DD67 /* FBSDKCoreKit.framework */; };
+		F59D9AA41DE843430090DD67 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59D9AA31DE843430090DD67 /* FBSDKLoginKit.framework */; };
+		F5AFEEDE1DE83C1200201AEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5AFEEDD1DE83C1200201AEA /* GoogleService-Info.plist */; };
+		F5C7C3101DFADDCF0083B527 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7C30F1DFADDCF0083B527 /* ArrayExtensions.swift */; };
+		F5C8A9CC1DE8742F007C4536 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8A9CB1DE8742F007C4536 /* PeopleViewController.swift */; };
+		F5C8A9CE1DE8743D007C4536 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8A9CD1DE8743D007C4536 /* ProfileViewController.swift */; };
+		F5D5C2241DE81359001E9B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5C2231DE81359001E9B15 /* AppDelegate.swift */; };
+		F5D5C2291DE81359001E9B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D5C2271DE81359001E9B15 /* Main.storyboard */; };
+		F5D5C22C1DE81359001E9B15 /* TeamUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D5C22A1DE81359001E9B15 /* TeamUp.xcdatamodeld */; };
+		F5D5C22E1DE81359001E9B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D5C22D1DE81359001E9B15 /* Assets.xcassets */; };
+		F5D5C2311DE81359001E9B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D5C22F1DE81359001E9B15 /* LaunchScreen.storyboard */; };
+		F5DACCEC1DF1A6A60032261F /* UserInterfaceUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DACCEB1DF1A6A60032261F /* UserInterfaceUtility.swift */; };
+		F5E803091DFDC12A00CB7C0A /* ProjectDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E803081DFDC12A00CB7C0A /* ProjectDataRepository.swift */; };
+		F5E8030B1DFDCAF400CB7C0A /* DetailProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8030A1DFDCAF400CB7C0A /* DetailProjectViewController.swift */; };
+		F5FB9A581E05BE4F004257DA /* DiscInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB9A571E05BE4F004257DA /* DiscInfoViewController.swift */; };
+		F5FE03831DFDBCD500003BBF /* ProjectsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE03821DFDBCD500003BBF /* ProjectsTableViewController.swift */; };
+		F5FE03851DFDBD6100003BBF /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE03841DFDBD6100003BBF /* CreateProjectViewController.swift */; };
+		F5FE03871DFDBEC700003BBF /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE03861DFDBEC700003BBF /* Project.swift */; };
+		F5FE03891DFDBF1900003BBF /* ProjectDataContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE03881DFDBF1900003BBF /* ProjectDataContract.swift */; };
+		F5FE038B1DFDBF7900003BBF /* ProjectFirebaseDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE038A1DFDBF7900003BBF /* ProjectFirebaseDataContext.swift */; };
+		F5FFA8C11DFA92E700D9A4D1 /* EditPersonalityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFA8C01DFA92E700D9A4D1 /* EditPersonalityTableViewController.swift */; };
+		F5FFA8C51DFAA3A000D9A4D1 /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FFA8C41DFAA3A000D9A4D1 /* Personality.swift */; };
+		FC497578E2D97F19301E695D /* Pods_TeamUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF02C0E996B83EB28DE949AE /* Pods_TeamUp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04684122441D6236AC33D7C8 /* Pods-TeamUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamUp/Pods-TeamUp.release.xcconfig"; sourceTree = "<group>"; };
+		7689230E62140AB916316830 /* Pods-TeamUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamUp/Pods-TeamUp.debug.xcconfig"; sourceTree = "<group>"; };
+		EF02C0E996B83EB28DE949AE /* Pods_TeamUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50B35531E02B8E400D4856A /* EnrollmentDataContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollmentDataContract.swift; sourceTree = "<group>"; };
+		F50B35551E02B8FD00D4856A /* EnrollmentFirebaseDataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollmentFirebaseDataContext.swift; sourceTree = "<group>"; };
+		F50B35571E02BEFA00D4856A /* EnrollmentDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollmentDataRepository.swift; sourceTree = "<group>"; };
+		F511BC6C1DE9BCB300151CE1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F51510D31DF0195000BEDEB7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F51510D51DF01DE700BEDEB7 /* DetailPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPeopleViewController.swift; sourceTree = "<group>"; };
+		F53F9BFF1DE878A800065A5B /* UserDataContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataContract.swift; sourceTree = "<group>"; };
+		F53F9C011DE878E400065A5B /* UserFirebaseDataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFirebaseDataContext.swift; sourceTree = "<group>"; };
+		F53F9C031DE8792000065A5B /* UserDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataRepository.swift; sourceTree = "<group>"; };
+		F54E99661DE8446A00A70EE2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F54E996B1DE871BA00A70EE2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F582F9141DFA88340008480F /* EditSkillsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSkillsetViewController.swift; sourceTree = "<group>"; };
+		F58693D51DEFFBE300728D9B /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		F59904561DFC5D6F007B6765 /* EditContactInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactInformationViewController.swift; sourceTree = "<group>"; };
+		F59904581DFC64FD007B6765 /* PersonalityDataContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityDataContract.swift; sourceTree = "<group>"; };
+		F599045A1DFC6516007B6765 /* PersonalityFirebaseDataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityFirebaseDataContext.swift; sourceTree = "<group>"; };
+		F599045C1DFC6552007B6765 /* PersonalityDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityDataRepository.swift; sourceTree = "<group>"; };
+		F599045E1DFC6674007B6765 /* SkillsetDataContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsetDataContract.swift; sourceTree = "<group>"; };
+		F59904601DFC66A8007B6765 /* Skillset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skillset.swift; sourceTree = "<group>"; };
+		F59904621DFC66DB007B6765 /* SkillsetFirebaseDataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsetFirebaseDataContext.swift; sourceTree = "<group>"; };
+		F59904641DFC6756007B6765 /* SkillsetDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsetDataRepository.swift; sourceTree = "<group>"; };
+		F59D9AA11DE8404D0090DD67 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		F59D9AA31DE843430090DD67 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		F5ABDE831DE8B55C00515C25 /* TeamUp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeamUp.entitlements; sourceTree = "<group>"; };
+		F5AFEEDD1DE83C1200201AEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5C7C30F1DFADDCF0083B527 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		F5C8A9CB1DE8742F007C4536 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		F5C8A9CD1DE8743D007C4536 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F5D5C2201DE81359001E9B15 /* TeamUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D5C2231DE81359001E9B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5D5C2281DE81359001E9B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5D5C22B1DE81359001E9B15 /* TeamUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeamUp.xcdatamodel; sourceTree = "<group>"; };
+		F5D5C22D1DE81359001E9B15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5D5C2301DE81359001E9B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5D5C2321DE81359001E9B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DACCEB1DF1A6A60032261F /* UserInterfaceUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterfaceUtility.swift; sourceTree = "<group>"; };
+		F5E803081DFDC12A00CB7C0A /* ProjectDataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDataRepository.swift; sourceTree = "<group>"; };
+		F5E8030A1DFDCAF400CB7C0A /* DetailProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProjectViewController.swift; sourceTree = "<group>"; };
+		F5FB9A571E05BE4F004257DA /* DiscInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscInfoViewController.swift; sourceTree = "<group>"; };
+		F5FE03821DFDBCD500003BBF /* ProjectsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewController.swift; sourceTree = "<group>"; };
+		F5FE03841DFDBD6100003BBF /* CreateProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
+		F5FE03861DFDBEC700003BBF /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		F5FE03881DFDBF1900003BBF /* ProjectDataContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDataContract.swift; sourceTree = "<group>"; };
+		F5FE038A1DFDBF7900003BBF /* ProjectFirebaseDataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFirebaseDataContext.swift; sourceTree = "<group>"; };
+		F5FFA8C01DFA92E700D9A4D1 /* EditPersonalityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPersonalityTableViewController.swift; sourceTree = "<group>"; };
+		F5FFA8C41DFAA3A000D9A4D1 /* Personality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5D5C21D1DE81359001E9B15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC497578E2D97F19301E695D /* Pods_TeamUp.framework in Frameworks */,
+				F59D9AA21DE8404D0090DD67 /* FBSDKCoreKit.framework in Frameworks */,
+				F59D9AA41DE843430090DD67 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D3187F918A1AC7C6EF4A49D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F59D9AA11DE8404D0090DD67 /* FBSDKCoreKit.framework */,
+				F59D9AA31DE843430090DD67 /* FBSDKLoginKit.framework */,
+				EF02C0E996B83EB28DE949AE /* Pods_TeamUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5F2D15E44AC62C8BAE72AB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7689230E62140AB916316830 /* Pods-TeamUp.debug.xcconfig */,
+				04684122441D6236AC33D7C8 /* Pods-TeamUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F501E5791DF00F4100C40BFF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F511BC6C1DE9BCB300151CE1 /* SwiftyJSON.swift */,
+				F5DACCEB1DF1A6A60032261F /* UserInterfaceUtility.swift */,
+				F5C7C30F1DFADDCF0083B527 /* ArrayExtensions.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F501E57C1DF03B3400C40BFF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F51510D31DF0195000BEDEB7 /* CollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F50B35521E029EE400D4856A /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				F59904561DFC5D6F007B6765 /* EditContactInformationViewController.swift */,
+				F582F9141DFA88340008480F /* EditSkillsetViewController.swift */,
+				F5FFA8C01DFA92E700D9A4D1 /* EditPersonalityTableViewController.swift */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
+		F53F9BFB1DE8784C00065A5B /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+				F53F9C011DE878E400065A5B /* UserFirebaseDataContext.swift */,
+				F5FE038A1DFDBF7900003BBF /* ProjectFirebaseDataContext.swift */,
+				F59904621DFC66DB007B6765 /* SkillsetFirebaseDataContext.swift */,
+				F599045A1DFC6516007B6765 /* PersonalityFirebaseDataContext.swift */,
+				F50B35551E02B8FD00D4856A /* EnrollmentFirebaseDataContext.swift */,
+			);
+			name = Contexts;
+			sourceTree = "<group>";
+		};
+		F53F9BFC1DE8785900065A5B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F53F9C031DE8792000065A5B /* UserDataRepository.swift */,
+				F5E803081DFDC12A00CB7C0A /* ProjectDataRepository.swift */,
+				F59904641DFC6756007B6765 /* SkillsetDataRepository.swift */,
+				F599045C1DFC6552007B6765 /* PersonalityDataRepository.swift */,
+				F50B35571E02BEFA00D4856A /* EnrollmentDataRepository.swift */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		F53F9BFD1DE8785E00065A5B /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				F53F9BFF1DE878A800065A5B /* UserDataContract.swift */,
+				F5FE03881DFDBF1900003BBF /* ProjectDataContract.swift */,
+				F599045E1DFC6674007B6765 /* SkillsetDataContract.swift */,
+				F59904581DFC64FD007B6765 /* PersonalityDataContract.swift */,
+				F50B35531E02B8E400D4856A /* EnrollmentDataContract.swift */,
+			);
+			name = Contracts;
+			sourceTree = "<group>";
+		};
+		F53F9BFE1DE8786F00065A5B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F53F9BFD1DE8785E00065A5B /* Contracts */,
+				F53F9BFB1DE8784C00065A5B /* Contexts */,
+				F53F9BFC1DE8785900065A5B /* Repositories */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F54E996A1DE8716800A70EE2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F54E996B1DE871BA00A70EE2 /* User.swift */,
+				F5FE03861DFDBEC700003BBF /* Project.swift */,
+				F59904601DFC66A8007B6765 /* Skillset.swift */,
+				F5FFA8C41DFAA3A000D9A4D1 /* Personality.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F59904661DFC9166007B6765 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F5C8A9CD1DE8743D007C4536 /* ProfileViewController.swift */,
+				F5FB9A571E05BE4F004257DA /* DiscInfoViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		F59904671DFC9178007B6765 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				F5C8A9CB1DE8742F007C4536 /* PeopleViewController.swift */,
+				F51510D51DF01DE700BEDEB7 /* DetailPeopleViewController.swift */,
+			);
+			name = People;
+			sourceTree = "<group>";
+		};
+		F59904681DFC9186007B6765 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE03821DFDBCD500003BBF /* ProjectsTableViewController.swift */,
+				F5FE03841DFDBD6100003BBF /* CreateProjectViewController.swift */,
+				F5E8030A1DFDCAF400CB7C0A /* DetailProjectViewController.swift */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		F59904691DFC9191007B6765 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F54E99661DE8446A00A70EE2 /* LoginViewController.swift */,
+				F58693D51DEFFBE300728D9B /* CompanyViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F59D9AA51DE844000090DD67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F59904691DFC9191007B6765 /* Login */,
+				F59904681DFC9186007B6765 /* Projects */,
+				F59904671DFC9178007B6765 /* People */,
+				F59904661DFC9166007B6765 /* Profile */,
+				F50B35521E029EE400D4856A /* Edit */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F5D5C2171DE81359001E9B15 = {
+			isa = PBXGroup;
+			children = (
+				F5D5C2221DE81359001E9B15 /* TeamUp */,
+				F5D5C2211DE81359001E9B15 /* Products */,
+				C5F2D15E44AC62C8BAE72AB3 /* Pods */,
+				7D3187F918A1AC7C6EF4A49D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D5C2211DE81359001E9B15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5C2201DE81359001E9B15 /* TeamUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D5C2221DE81359001E9B15 /* TeamUp */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5C2271DE81359001E9B15 /* Main.storyboard */,
+				F54E996A1DE8716800A70EE2 /* Models */,
+				F59D9AA51DE844000090DD67 /* Controllers */,
+				F501E57C1DF03B3400C40BFF /* Cells */,
+				F53F9BFE1DE8786F00065A5B /* Data */,
+				F501E5791DF00F4100C40BFF /* Utilities */,
+				F5D5C2381DE8138D001E9B15 /* Supporting Files */,
+				F5D5C22D1DE81359001E9B15 /* Assets.xcassets */,
+			);
+			path = TeamUp;
+			sourceTree = "<group>";
+		};
+		F5D5C2381DE8138D001E9B15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5C2231DE81359001E9B15 /* AppDelegate.swift */,
+				F5D5C22F1DE81359001E9B15 /* LaunchScreen.storyboard */,
+				F5D5C22A1DE81359001E9B15 /* TeamUp.xcdatamodeld */,
+				F5ABDE831DE8B55C00515C25 /* TeamUp.entitlements */,
+				F5D5C2321DE81359001E9B15 /* Info.plist */,
+				F5AFEEDD1DE83C1200201AEA /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5D5C21F1DE81359001E9B15 /* TeamUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D5C2351DE81359001E9B15 /* Build configuration list for PBXNativeTarget "TeamUp" */;
+			buildPhases = (
+				27AFEF89B0B8C55852010E2D /* [CP] Check Pods Manifest.lock */,
+				F5D5C21C1DE81359001E9B15 /* Sources */,
+				F5D5C21D1DE81359001E9B15 /* Frameworks */,
+				F5D5C21E1DE81359001E9B15 /* Resources */,
+				51970E5B4FF3F42BCE7EE41B /* [CP] Embed Pods Frameworks */,
+				298E1BA51E9552D85F4EF26E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeamUp;
+			productName = TeamUp;
+			productReference = F5D5C2201DE81359001E9B15 /* TeamUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D5C2181DE81359001E9B15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = TeamUp;
+				TargetAttributes = {
+					F5D5C21F1DE81359001E9B15 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = UWTAA8VL2P;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F5D5C21B1DE81359001E9B15 /* Build configuration list for PBXProject "TeamUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5D5C2171DE81359001E9B15;
+			productRefGroup = F5D5C2211DE81359001E9B15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D5C21F1DE81359001E9B15 /* TeamUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5D5C21E1DE81359001E9B15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D5C2311DE81359001E9B15 /* LaunchScreen.storyboard in Resources */,
+				F5AFEEDE1DE83C1200201AEA /* GoogleService-Info.plist in Resources */,
+				F5D5C22E1DE81359001E9B15 /* Assets.xcassets in Resources */,
+				F5D5C2291DE81359001E9B15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27AFEF89B0B8C55852010E2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		298E1BA51E9552D85F4EF26E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamUp/Pods-TeamUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51970E5B4FF3F42BCE7EE41B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamUp/Pods-TeamUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5D5C21C1DE81359001E9B15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F9C001DE878A800065A5B /* UserDataContract.swift in Sources */,
+				F59904651DFC6756007B6765 /* SkillsetDataRepository.swift in Sources */,
+				F5FE03851DFDBD6100003BBF /* CreateProjectViewController.swift in Sources */,
+				F5FE03831DFDBCD500003BBF /* ProjectsTableViewController.swift in Sources */,
+				F59904611DFC66A8007B6765 /* Skillset.swift in Sources */,
+				F54E996C1DE871BA00A70EE2 /* User.swift in Sources */,
+				F5DACCEC1DF1A6A60032261F /* UserInterfaceUtility.swift in Sources */,
+				F50B35541E02B8E400D4856A /* EnrollmentDataContract.swift in Sources */,
+				F5E803091DFDC12A00CB7C0A /* ProjectDataRepository.swift in Sources */,
+				F5FE03891DFDBF1900003BBF /* ProjectDataContract.swift in Sources */,
+				F511BC6D1DE9BCB400151CE1 /* SwiftyJSON.swift in Sources */,
+				F599045B1DFC6516007B6765 /* PersonalityFirebaseDataContext.swift in Sources */,
+				F53F9C021DE878E400065A5B /* UserFirebaseDataContext.swift in Sources */,
+				F5FFA8C11DFA92E700D9A4D1 /* EditPersonalityTableViewController.swift in Sources */,
+				F5FE038B1DFDBF7900003BBF /* ProjectFirebaseDataContext.swift in Sources */,
+				F5E8030B1DFDCAF400CB7C0A /* DetailProjectViewController.swift in Sources */,
+				F51510D61DF01DE700BEDEB7 /* DetailPeopleViewController.swift in Sources */,
+				F59904591DFC64FD007B6765 /* PersonalityDataContract.swift in Sources */,
+				F54E99671DE8446A00A70EE2 /* LoginViewController.swift in Sources */,
+				F50B35561E02B8FD00D4856A /* EnrollmentFirebaseDataContext.swift in Sources */,
+				F5FE03871DFDBEC700003BBF /* Project.swift in Sources */,
+				F59904571DFC5D6F007B6765 /* EditContactInformationViewController.swift in Sources */,
+				F5D5C2241DE81359001E9B15 /* AppDelegate.swift in Sources */,
+				F5C7C3101DFADDCF0083B527 /* ArrayExtensions.swift in Sources */,
+				F599045D1DFC6552007B6765 /* PersonalityDataRepository.swift in Sources */,
+				F5FB9A581E05BE4F004257DA /* DiscInfoViewController.swift in Sources */,
+				F5FFA8C51DFAA3A000D9A4D1 /* Personality.swift in Sources */,
+				F59904631DFC66DB007B6765 /* SkillsetFirebaseDataContext.swift in Sources */,
+				F53F9C041DE8792000065A5B /* UserDataRepository.swift in Sources */,
+				F58693D61DEFFBE300728D9B /* CompanyViewController.swift in Sources */,
+				F51510D41DF0195000BEDEB7 /* CollectionViewCell.swift in Sources */,
+				F599045F1DFC6674007B6765 /* SkillsetDataContract.swift in Sources */,
+				F50B35581E02BEFA00D4856A /* EnrollmentDataRepository.swift in Sources */,
+				F5C8A9CE1DE8743D007C4536 /* ProfileViewController.swift in Sources */,
+				F582F9151DFA88340008480F /* EditSkillsetViewController.swift in Sources */,
+				F5D5C22C1DE81359001E9B15 /* TeamUp.xcdatamodeld in Sources */,
+				F5C8A9CC1DE8742F007C4536 /* PeopleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5D5C2271DE81359001E9B15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D5C2281DE81359001E9B15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D5C22F1DE81359001E9B15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D5C2301DE81359001E9B15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5D5C2331DE81359001E9B15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5D5C2341DE81359001E9B15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5D5C2361DE81359001E9B15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7689230E62140AB916316830 /* Pods-TeamUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TeamUp/TeamUp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UWTAA8VL2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks\"",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = TeamUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamup.TeamUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F5D5C2371DE81359001E9B15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04684122441D6236AC33D7C8 /* Pods-TeamUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TeamUp/TeamUp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UWTAA8VL2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks\"",
+					"~/Documents/FacebookSDK",
+				);
+				INFOPLIST_FILE = TeamUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamup.TeamUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5D5C21B1DE81359001E9B15 /* Build configuration list for PBXProject "TeamUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D5C2331DE81359001E9B15 /* Debug */,
+				F5D5C2341DE81359001E9B15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D5C2351DE81359001E9B15 /* Build configuration list for PBXNativeTarget "TeamUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D5C2361DE81359001E9B15 /* Debug */,
+				F5D5C2371DE81359001E9B15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5D5C22A1DE81359001E9B15 /* TeamUp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5D5C22B1DE81359001E9B15 /* TeamUp.xcdatamodel */,
+			);
+			currentVersion = F5D5C22B1DE81359001E9B15 /* TeamUp.xcdatamodel */;
+			path = TeamUp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5D5C2181DE81359001E9B15 /* Project object */;
+}
